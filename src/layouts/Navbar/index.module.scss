@@ -1,7 +1,7 @@
 .navbar {
   position: sticky;
   width: 100%;
-  background: var(--primary-background);
+  background: var(--background);
   padding: 10px 10px;
   top: 0;
   height: 84px;
@@ -84,7 +84,7 @@
 .nav-list.visible {
   position: absolute;
   width: 100%;
-  background: var(--primary-background);
+  background: var(--background);
   left: 0;
   height: auto;
   top: 84px;
@@ -115,7 +115,7 @@
     &::before {
       bottom: 2px;
       left: 1%;
-      border-bottom: 2px solid rgb(54, 54, 54);
+      border-bottom: 2px solid var(--accent);
       transition: 0.5s all;
   }
   

@@ -1,0 +1,43 @@
+.mouse {
+  position: relative;
+  border: 4px solid var(--accent);
+  width: 50px;
+  height: 80px;
+  border-radius: 85px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.mouse > .wheel {
+  position: absolute;
+  background: var(--accent);
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  width: 10px;
+  height: 15px;
+  border-radius: 15px;
+  animation: wheel 1500ms ease infinite;
+}
+
+@keyframes wheel {
+  0% {
+    top: 20%;
+    transform: translate(-50%, 20%);
+    opacity: 1;
+  }
+  100% {
+    top: 60%;
+    transform: translate(-50%, 60%);
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mouse {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 480px) {
+  .mouse {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

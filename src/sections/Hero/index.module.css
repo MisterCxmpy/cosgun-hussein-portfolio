@@ -1,3 +1,9 @@
+.hero-section {
+  min-height: 100vh;
+  height: 100vh;
+  padding-top: 100px;
+}
+
 .hero-content {
   padding: 28px;
   margin: 24px auto;
@@ -16,19 +22,19 @@
   font-size: clamp(18px, 5vw, 20px);
   color: var(--accent);
   font-weight: 600;
-  animation: fadeup 500ms forwards 100ms;
+  animation: fadeup 300ms forwards 100ms;
 }
 .hero-content > h2 {
   font-size: clamp(60px, 8vw, 80px);
   margin: 0;
-  animation: fadeup 500ms forwards 200ms;
+  animation: fadeup 300ms forwards 200ms;
 }
 .hero-content > h3 {
   margin-top: 5px;
   margin: 0px;
   line-height: 1.3;
   font-size: clamp(40px, 8vw, 60px);
-  animation: fadeup 500ms forwards 300ms;
+  animation: fadeup 300ms forwards 300ms;
   color: var(--text-alt);
 }
 .hero-content > p {
@@ -36,7 +42,7 @@
   margin-top: 20px;
   max-width: 540px;
   font-size: 20px;
-  animation: fadeup 500ms forwards 400ms;
+  animation: fadeup 300ms forwards 400ms;
 }
 
 @keyframes fadeup {
@@ -47,5 +53,21 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (max-width: 1080px) {
+  .hero-section {
+    padding-top: 75px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 25px;
   }
 }/*# sourceMappingURL=index.module.css.map */
