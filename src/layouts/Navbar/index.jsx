@@ -15,10 +15,6 @@ export default function Navbar() {
   };
 
   const handleNavClick = () => {
-    if (window.location.pathname === "/") {
-      window.scrollTo(0, 0);
-    }
-
     setMenuVisible(false)
   };
   
@@ -61,10 +57,10 @@ export default function Navbar() {
   )
 }
 
-function NewLink({ to, content}) {
+function NewLink({ to, content, onClick}) {
 
   return (
-    <Link to={to} spy={true} smooth={true} offset={-150} duration={500} className={styles["nav-btn"]}>
+    <Link to={to} spy={true} smooth={true} offset={-150} duration={500} onClick={onClick} className={styles["nav-btn"]}>
       <span >{content}</span>
     </Link>
   )
