@@ -51,7 +51,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
             ))}
-            <ThemeButton />
+            <ThemeButton handleClick={handleNavClick} />
           </ul>
           
         </div>

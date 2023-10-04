@@ -70,6 +70,8 @@
   margin-left: 0;
   scale: 0.8;
   fill: var(--text);
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .nav-list.visible {
@@ -91,6 +93,7 @@
   display: none;
   cursor: pointer;
   font-size: 32px;
+  margin-right: 6px;
 }
 
 @media (max-width: 768px) {
@@ -115,6 +118,6 @@
     pointer-events: none;
   }
   .hamburger-icon {
-    display: block;
+    display: flex;
   }
 }/*# sourceMappingURL=index.module.css.map */

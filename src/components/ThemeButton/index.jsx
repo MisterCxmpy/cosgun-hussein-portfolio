@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './index.module.css'
 import { WiMoonAltThirdQuarter } from "react-icons/wi"
 
-export default function ThemeButton() {
+export default function ThemeButton( {handleClick} ) {
 
   const savedTheme = localStorage.getItem('theme');
   const [isDarkTheme, setIsDarkTheme] = useState(savedTheme === 'dark');
@@ -19,7 +19,10 @@ export default function ThemeButton() {
 
   return (
     <li className={styles['nav-item']}>
-      <button aria-label="Change the page theme" className={`${styles["nav-btn"]} ${styles["theme-change"]}`} onClick={toggleTheme} ><WiMoonAltThirdQuarter /></button>
+      <button aria-label="Change the page theme" className={`${styles["nav-btn"]} ${styles["theme-change"]}`} onClick={() => {
+        toggleTheme()
+        handleClick()
+      }} ><WiMoonAltThirdQuarter /></button>
     </li>
   )
 }

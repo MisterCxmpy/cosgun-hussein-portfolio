@@ -78,6 +78,7 @@
     margin-left: 0;
     scale: 0.8;
     fill: var(--text);
+    width: min-content;
   }
 }
 
@@ -102,6 +103,7 @@
   display: none;
   cursor: pointer;
   font-size: 32px;
+  margin-right: 6px;
 }
 
 @media (max-width: 768px) {
@@ -130,6 +132,6 @@
   }
 
   .hamburger-icon {
-    display: block;
+    display: flex;
   }
 }
