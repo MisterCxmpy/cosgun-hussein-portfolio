@@ -1,0 +1,36 @@
+.hero-content {
+  padding: 28px;
+  margin: 24px auto;
+  text-align: center;
+  max-width: 1280px;
+
+  > .text {
+    font-family: 'Jost', sans-serif;
+    cursor: default;
+  }
+
+  > h1 {
+    font-size: clamp(18px, 5vw, 20px);
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  > h2 {
+    font-size: clamp(60px, 8vw, 80px);
+    margin: 0;
+  }
+
+  > h3 {
+    margin-top: 5px;
+    margin: 0px;
+    line-height: 1.3;
+    font-size: clamp(40px, 8vw, 60px);
+  }
+
+  > p {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 540px;
+    font-size: 20px;
+  }
+}

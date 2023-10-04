@@ -1,0 +1,24 @@
+.nav-item {
+  list-style: none;
+}
+.nav-item > button > svg {
+  height: 25.5px !important;
+  font-size: 22.5px;
+}
+
+.theme-change {
+  color: var(--text);
+}
+
+.nav-btn {
+  font-size: 17px;
+  font-family: "Mohave", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+}/*# sourceMappingURL=index.module.css.map */

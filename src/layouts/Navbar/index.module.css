@@ -72,10 +72,6 @@
   fill: var(--text);
 }
 
-.theme-change {
-  color: var(--text);
-}
-
 .nav-list.visible {
   position: absolute;
   width: 100%;
