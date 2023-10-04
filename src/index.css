@@ -39,6 +39,19 @@ body[data-theme="dark"] {
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   --white: #dbdaf1;
   --dark-purple: #12102d; 
+
+  --fadeup: fadeup 300ms forwards;
+}
+
+@keyframes fadeup {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 body {

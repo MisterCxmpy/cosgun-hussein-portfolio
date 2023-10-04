@@ -1,4 +1,4 @@
-.projects-section {
+.contact-section {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -13,10 +13,4 @@
   &.show {
     animation: var(--fadeup)
   }
-}
-
-.featured-projects {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
 }

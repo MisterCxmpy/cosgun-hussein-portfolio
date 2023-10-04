@@ -4,7 +4,7 @@ import { Wheel } from '../../components'
 
 export default function Hero() {
   return (
-    <section id='hero' className={styles['hero-section']}>
+    <section id='home' className={styles['hero-section']}>
       <article className={styles['hero-content']}>
         <h1 className={styles['text']}>Hi, my name is</h1>
         <h2 className={styles['text']}>Cosgun Hussein</h2>

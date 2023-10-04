@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./index.module.css";
 import { Header, Skill } from "../../components";
 
 export default function About() {
-
   const skills = [
     "Python",
     "HTML",
@@ -22,10 +21,35 @@ export default function About() {
     "Unity"
   ];
 
+  const aboutSectRef = useRef();
+  const aboutContRef = useRef();
+
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove(styles['hidden']);
+          entry.target.classList.add(styles['show']);
+        }
+      });
+    },
+    {
+      rootMargin: '0px 0px -60% 0px',
+    }
+  );
+
+  useEffect(() => {
+    const observers = [aboutSectRef.current, aboutContRef.current]
+
+    observers.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [observer]);
+
   return (
-    <section id="about" className={styles["about-section"]}>
+    <section ref={aboutSectRef} id="about" className={`${styles["about-section"]} ${styles["hidden"]}`}>
       <Header header={"About"} subHeading={"Discover My Journey in Web Development!"} />
-      <div className={styles["about-content"]}>
+      <div ref={aboutContRef} className={`${styles["about-content"]} ${styles["hidden"]}`}>
         <div className={styles["about-main"]}>
           <h3 className={styles["about-title"]}>Get to know me!</h3>
           <article className={styles["about-details"]}>

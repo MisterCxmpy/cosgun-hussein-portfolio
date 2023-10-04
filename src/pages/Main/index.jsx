@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './index.module.css'
-import { About, Hero, Projects } from '../../sections'
+import { About, Contact, Hero, Projects } from '../../sections'
 
 export default function Main() {
   return (
@@ -8,6 +8,7 @@ export default function Main() {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </>
   )
 }

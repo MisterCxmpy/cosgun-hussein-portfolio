@@ -1,4 +1,4 @@
-.projects-section {
+.contact-section {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -6,15 +6,9 @@
   height: auto;
   transition: opacity 0.5s ease;
 }
-.projects-section.hidden {
+.contact-section.hidden {
   opacity: 0;
 }
-.projects-section.show {
+.contact-section.show {
   animation: var(--fadeup);
-}
-
-.featured-projects {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
 }/*# sourceMappingURL=index.module.css.map */

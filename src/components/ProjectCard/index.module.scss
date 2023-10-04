@@ -5,6 +5,15 @@
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
+  transition: opacity 0.5s ease;
+
+  &.hidden {
+    opacity: 0;
+  }
+
+  &.show {
+    animation: var(--fadeup)
+  }
 
   &:not(:last-of-type) {
     margin-bottom: 100px;
@@ -242,3 +251,4 @@
     padding: 25px 25px 20px;
   }
 }
+

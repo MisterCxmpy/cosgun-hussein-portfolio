@@ -4,6 +4,13 @@
   gap: 10px;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
+  transition: opacity 0.5s ease;
+}
+.featured-project.hidden {
+  opacity: 0;
+}
+.featured-project.show {
+  animation: var(--fadeup);
 }
 .featured-project:not(:last-of-type) {
   margin-bottom: 100px;
