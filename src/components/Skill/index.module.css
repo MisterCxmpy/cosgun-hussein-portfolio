@@ -1,7 +1,8 @@
 .skill {
   padding: 10px 20px;
   font-size: 22px;
-  color: var(--text);
+  color: var(--white);
   background: var(--accent);
   border-radius: 5px;
+  font-weight: 400;
 }/*# sourceMappingURL=index.module.css.map */

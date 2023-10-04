@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Inter:wght@200;600;800&family=Jost:wght@300;400;700&family=Lato:wght@400;700&family=Mohave:wght@400;500;600&family=Oswald:wght@400;500;700&family=Shadows+Into+Light&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Inter:wght@200;600;800&family=Jost:wght@300;400;500;700&family=Lato:wght@400;700&family=Mohave:wght@400;500;600&family=Oswald:wght@400;500;700&family=Shadows+Into+Light&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
   padding: 0;
@@ -13,6 +13,7 @@ body[data-theme="light"] {
   --primary: #2f2a74;
   --secondary: #d4d2ef;
   --accent: #4941b4;
+  --shadow: #403ca0;
 }
 
 body[data-theme="dark"] {
@@ -22,6 +23,7 @@ body[data-theme="dark"] {
   --primary: #908bd5;
   --secondary: #12102d;
   --accent: #534bbe;
+  --shadow: #403ca0;
 }
 
 :root {
@@ -33,6 +35,10 @@ body[data-theme="dark"] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --white: #dbdaf1;
+  --dark-purple: #12102d; 
 }
 
 body {
@@ -62,4 +68,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 10px;
   font-weight: 600;
   line-height: 1.1;
+}
+
+section {
+  padding: 100px 0;
 }

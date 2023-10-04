@@ -1,0 +1,243 @@
+.featured-project {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 100px;
+  }
+
+  &:nth-of-type(2n+1) {
+    > .project-content {
+      grid-column: 7 / -1;
+      text-align: right;
+    }
+
+    .project-links {
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      margin-left: 0px;
+      margin-right: -10px;
+    }
+
+    .project-image {
+      grid-column: 1 / 8;
+    }
+  }
+
+  .project-content {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+  }
+}
+
+.project-overline {
+  margin: 10px 0px;
+  color: var(--accent);
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.project-title {
+  color: var(--text);
+  font-size: clamp(30px, 5vw, 34px);
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+
+  > a {
+    color: inherit;
+  }
+}
+
+.project-description {
+  box-shadow: 0 10px 30px -15px var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--white);
+  font-size: 18px;
+}
+
+.project-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-left: -10px;
+  color: var(--text);
+  font-size: 26px;
+
+  > a {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px;
+    color: inherit;
+  }
+
+}
+
+.project-image {
+  box-shadow: 0 10px 30px -15px var(--shadow);
+  transition: var(--transition);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+
+  > a {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-purple);
+    border-radius: 3px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 3;
+    transition: var(--transition);
+    background-color: var(--dark-purple);
+    mix-blend-mode: screen;
+  }
+
+  &:hover {
+
+    box-shadow: none;
+
+    > a::before {
+      background-color: transparent;
+    }
+
+    .image-wrapper {
+      filter: grayscale(0) contrast(1) brightness(100%)
+    }
+  }
+}
+
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 3px;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+
+  img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1080px) {
+  .featured-project:nth-of-type(2n+1) .project-content {
+    grid-column: 5 / -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-title {
+    margin: 0px 0px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-description {
+    padding: 20px 0px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .featured-project:nth-of-type(2n+1) {
+    .project-links {
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      margin-left: -10px;
+      margin-right: 0px;
+    }
+
+    .project-image {
+      grid-column: 1 / -1;
+    }
+
+    .project-content {
+      grid-column: 1 / -1;
+      padding: 40px 40px 30px;
+      text-align: left;
+    }
+  }
+
+  .project-image {
+    grid-column: 1 / -1;
+    height: 100%;
+    opacity: 0.25;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    grid-column: 1 / -1 !important;
+    padding: 40px 40px 30px;
+    z-index: 5;
+  }
+
+  .project-title {
+
+    > a {
+      position: static;
+    }
+
+    > a::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+    } 
+  } 
+  .image-wrapper {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    filter: grayscale(100%) contrast(1) brightness(50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-project:nth-of-type(2n+1) .project-content {
+    padding: 25px 25px 20px;
+  }
+}

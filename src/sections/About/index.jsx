@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { Skill } from "../../components";
+import { Header, Skill } from "../../components";
 
 export default function About() {
 
@@ -24,14 +24,7 @@ export default function About() {
 
   return (
     <section id="about" className={styles["about-section"]}>
-      <header className={styles["header"]}>
-        <h2 className={styles["header-content"]}>
-          <span className={styles["heading"]}>About</span>
-          <span className={styles["sub-heading"]}>
-            Discover My Journey in Web Development!
-          </span>
-        </h2>
-      </header>
+      <Header header={"About"} subHeading={"Discover My Journey in Web Development!"} />
       <div className={styles["about-content"]}>
         <div className={styles["about-main"]}>
           <h3 className={styles["about-title"]}>Get to know me!</h3>
