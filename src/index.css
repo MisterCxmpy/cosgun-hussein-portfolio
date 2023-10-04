@@ -8,6 +8,7 @@
 
 body[data-theme="light"] {
   --text: #0f0e25;
+  --text-alt: #2a2767;
   --background: #e2e1f4;
   --primary: #2f2a74;
   --secondary: #d4d2ef;
@@ -16,6 +17,7 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
   --text: #dbdaf1;
+  --text-alt: #9a97d7;
   --background: #0c0b1e;
   --primary: #908bd5;
   --secondary: #12102d;
