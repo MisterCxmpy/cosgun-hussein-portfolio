@@ -38,7 +38,10 @@ body[data-theme="dark"] {
 
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   --white: #dbdaf1;
+  --light-grey: #908bd8;
+  --light-purple: #2f1b47; 
   --dark-purple: #12102d; 
+  --purple: #2f1b47; 
 
   --fadeup: fadeup 300ms forwards;
 }

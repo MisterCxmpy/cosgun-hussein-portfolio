@@ -12,8 +12,50 @@
   animation: var(--fadeup);
 }
 
-.featured-projects {
+.featured-projects, .noteworthy-projects {
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+
+.heading {
+  font-family: "Jost", sans-serif;
+  cursor: default;
+}
+
+.header {
+  margin-top: 75px;
+}
+.header.hidden {
+  opacity: 0;
+}
+.header.show {
+  animation: var(--fadeup);
+}
+
+.heading {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  color: var(--accent);
+  cursor: default;
+  font-size: clamp(28px, 8vw, 32px);
+}
+
+.noteworthy-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+  margin: 50px 0px 0px;
+}
+
+@media (max-width: 480px) {
+  .noteworthy-projects {
+    row-gap: 20px;
+  }
 }/*# sourceMappingURL=index.module.css.map */
