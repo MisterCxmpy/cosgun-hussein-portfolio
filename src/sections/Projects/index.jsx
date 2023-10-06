@@ -18,19 +18,19 @@ export default function Projects() {
       <ul className={styles['featured-projects']}>
         <ProjectCard
           title="Within Agency"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque consequatur a vel! Porro rerum rem in blanditiis fugiat deleniti a dolore suscipit deserunt odio nemo, necessitatibus dolores, cupiditate possimus?"
+          desc="Redesigned and developed Within Agency's website with React, enhancing their online presence and user experience. Our collaborative effort resulted in a remarkable web solution."
           image={WithinAgency}
           link="https://withinagency.com"
         />
         <ProjectCard
           title="Smarten Up"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque consequatur a vel! Porro rerum rem in blanditiis fugiat deleniti a dolore suscipit deserunt odio nemo, necessitatibus dolores, cupiditate possimus?"
+          desc="Redesigned and built Smarten Up Dry Cleaners' website using React, enhancing their online presence with a seamless blend of aesthetics and functionality. Meticulously crafted to reflect their commitment to excellence."
           image={SmartenUp}
           link="https://smartnup.co.uk"
         />
         <ProjectCard
           title="Serenity AI"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque consequatur a vel! Porro rerum rem in blanditiis fugiat deleniti a dolore suscipit deserunt odio nemo, necessitatibus dolores, cupiditate possimus?"
+          desc="Serenity AI is a mental health app designed to offer support and guidance for improved well-being. Whether you seek accountability or a trusted companion, we're here to assist you on your journey to better mental health."
           image={SerenityAI}
           link="https://serenity-ai.netlify.app/authenticate/login"
           github="https://github.com/MisterCxmpy/mental-health-client"
@@ -42,8 +42,8 @@ export default function Projects() {
         </h2>
       </header>
       <ul className={`${styles['noteworthy-projects']}`}>
-        <ProjectBox link={"https://ashs-pawsome-gallery.netlify.app"} title={"Ash's Pawsome Gallery"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque consequatur a vel! Porro rerum rem in blanditiis fugiat deleniti a dolore suscipit deserunt odio nemo, necessitatibus dolores, cupiditate possimus?"} />
-        <ProjectBox link={"https://lap3-learnify.netlify.app"} title={"Learnify"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque consequatur a vel! Porro rerum rem in blanditiis fugiat deleniti a dolore suscipit deserunt odio nemo, necessitatibus dolores, cupiditate possimus?"} />
+        <ProjectBox link={"https://ashs-pawsome-gallery.netlify.app"} title={"Ash's Pawsome Gallery"} description={"Ash's Pawsome Gallery is a website dedicated solely to my dog. Every picture I've taken of him will be stored on this website. All the images are stored on Google Drive, and then I use the Google Drive API to fetch the images. This allows for easy access, and it's also simple for me to add new images"} />
+        <ProjectBox link={"https://lap3-learnify.netlify.app"} title={"Learnify"} description={"Learnify is a vibrant, all-in-one platform designed for learning and revision at GCSE and A-level standards. Offering nine subjects from Maths to Sports Science, it makes studying enjoyable. Engage with quizzes or create custom flashcards on the user-friendly interface. Access your personalized content effortlessly on the Dashboard."} />
       </ul>
     </section>
   )
