@@ -65,7 +65,7 @@
   justify-content: end;
 }
 .row > a, .row > a > span > svg {
-  height: 100%;
+  height: 70px;
   margin: auto;
   margin-left: 0;
   scale: 0.8;
