@@ -1,7 +1,13 @@
 .hero-section {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
   height: auto;
-  padding-bottom: 0;
+  padding: 0px;
 }
 
 .hero-content {
@@ -53,21 +59,5 @@
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-@media (max-width: 1080px) {
-  .hero-section {
-    padding-top: 75px;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 50px;
-  }
-}
-@media (max-width: 480px) {
-  .hero-section {
-    padding-top: 25px;
   }
 }/*# sourceMappingURL=index.module.css.map */

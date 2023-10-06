@@ -2,29 +2,13 @@ import React, { useEffect, useRef } from 'react'
 import styles from './index.module.css'
 import { Link } from 'react-router-dom'
 import { BiLinkExternal, BiLogoGithub } from 'react-icons/bi';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function ProjectCard({ title, desc, image, link, github }) {
 
   const projectRef = useRef();
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove(styles['hidden']);
-          entry.target.classList.add(styles['show']);
-        }
-      });
-    },
-    {
-      rootMargin: '0px 0px -40% 0px',
-    }
-  );
-
-  useEffect(() => {
-    observer.observe(projectRef.current);
-    return () => observer.disconnect();
-  }, [observer]);
+  useIntersectionObserver(projectRef, styles, -40)
 
   return (
     <li ref={projectRef} className={`${styles['featured-project']} ${styles["hidden"]}`}>

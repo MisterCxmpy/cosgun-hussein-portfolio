@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from './index.module.css'
+import { Link } from 'react-router-dom'
+import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 
 export default function Contact() {
-  return (
-    <section id='contact' className={styles['contact-section']}>
 
+  const contactRef = useRef()
+
+  useIntersectionObserver(contactRef, styles, -60)
+
+  return (
+    <section ref={contactRef} id='contact' className={`${styles['contact-section']} ${styles['hidden']}`}>
+      <article className={styles['contact-content']}>
+        <h1 className={styles['text']}>That's it.</h1>
+        <h2 className={styles['text']}>Get In Touch</h2>
+        <p className={styles['text']}>I'm always excited to connect with new people and explore potential collaborations. Whether you have a query, an idea to discuss, or just want to say hello, don't hesitate to reach out! I'll try my best to get back to you as soon as I can!</p>
+        <Link className={`${styles['text']} ${styles["email"]}`} to={"mailto:cosgunhussein@gmail.com"} target='_blank' aria-label='Contact Button' >Pop Up</Link>
+      </article>
     </section>
   )
 }

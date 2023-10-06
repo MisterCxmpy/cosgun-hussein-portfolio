@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./index.module.css";
 import { Header, Skill } from "../../components";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 export default function About() {
   const skills = [
@@ -24,27 +25,8 @@ export default function About() {
   const aboutSectRef = useRef();
   const aboutContRef = useRef();
 
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove(styles['hidden']);
-          entry.target.classList.add(styles['show']);
-        }
-      });
-    },
-    {
-      rootMargin: '0px 0px -60% 0px',
-    }
-  );
-
-  useEffect(() => {
-    const observers = [aboutSectRef.current, aboutContRef.current]
-
-    observers.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, [observer]);
+  useIntersectionObserver(aboutSectRef, styles, -55)
+  useIntersectionObserver(aboutContRef, styles, -55)
 
   return (
     <section ref={aboutSectRef} id="about" className={`${styles["about-section"]} ${styles["hidden"]}`}>
