@@ -63,3 +63,9 @@
     row-gap: 20px;
   }
 }
+
+@media (max-width: 1080px) {
+  .noteworthy-projects {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

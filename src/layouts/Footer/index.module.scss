@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+  text-align: center;
+}
+
+.socials {
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  margin: 0px auto 10px;
+  color: var(--text);
+
+  > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+    > li {
+      margin: 0 10px;
+      color: inherit;
+  
+      > a {
+        color: inherit;
+        font-size: 22px;
+      }
+    }
+  }
+
+  
+}

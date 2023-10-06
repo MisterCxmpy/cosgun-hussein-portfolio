@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Navbar } from './layouts'
+import { Footer, Navbar } from './layouts'
 import { MainWrapper } from './components'
 import { Main } from './pages'
 
@@ -16,6 +16,7 @@ function App() {
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
   )
 }
