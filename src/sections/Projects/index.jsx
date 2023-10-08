@@ -3,6 +3,7 @@ import styles from './index.module.css'
 import { Header, ProjectBox, ProjectCard } from '../../components'
 import { SerenityAI, SmartenUp, WithinAgency } from '../../assets'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
 
@@ -42,8 +43,9 @@ export default function Projects() {
         </h2>
       </header>
       <ul className={`${styles['noteworthy-projects']}`}>
-        <ProjectBox link={"https://ashs-pawsome-gallery.netlify.app"} title={"Ash's Pawsome Gallery"} description={"Ash's Pawsome Gallery is exclusively dedicated to my dog, storing all his pictures on Google Drive via the Google Drive API for easy access and effortless addition of new images."} />
-        <ProjectBox link={"https://lap3-learnify.netlify.app"} title={"Learnify"} description={"Learnify is an all-in-one platform for GCSE and A-level learning, offering nine subjects, interactive quizzes, custom flashcards, and a user-friendly Dashboard for personalized content."} />
+        <ProjectBox link={"https://ashs-pawsome-gallery.netlify.app"} title={"Ash's Pawsome Gallery"} description={"Ash's Pawsome Gallery is exclusively dedicated to my dog, storing all his pictures on Google Drive via the Google Drive API for easy access and effortless addition of new images."} gitHub={"https://github.com/MisterCxmpy/ashs-pawsome-gallery-client"} />
+        <ProjectBox link={"https://lap3-learnify.netlify.app"} title={"Learnify"} description={"Learnify is an all-in-one platform for GCSE and A-level learning, offering nine subjects, interactive quizzes, custom flashcards, and a user-friendly Dashboard for personalized content."} gitHub={"https://github.com/MisterCxmpy/Learnify"} />
+        <ProjectBox link={"https://nuka-diner.netlify.app"} title={"Nuka Diner"} description={`Heavily inspired by <a href="https://lynnandtonic.com">Lynn Fisher</a> 'The Food Place', Nuka Diner is a Fallout-inspired food menu showcasing delicious foods from all around the Commonwealth.`} gitHub={"https://github.com/MisterCxmpy/nuka-diner"} />
       </ul>
     </section>
   )

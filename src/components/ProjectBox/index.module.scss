@@ -40,8 +40,11 @@
     font-size: 40px;
     color: var(--light-purple);    
   }
+}
 
+.links {
   > a > svg {
+    margin: 0 5px;
 
     color: var(--white);
 
@@ -66,4 +69,12 @@
 .project-description {
   font-size: 15px;
   color: var(--light-grey);
+  cursor: default;
+
+  > p > a {
+    font-size: 15px;
+    color: var(--light-grey);
+    text-decoration: underline;
+    font-weight: 700;
+  }
 }

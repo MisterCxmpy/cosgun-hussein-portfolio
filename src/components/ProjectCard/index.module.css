@@ -60,6 +60,7 @@
   background-color: var(--accent);
   color: var(--white);
   font-size: 18px;
+  cursor: default;
 }
 
 .project-links {
