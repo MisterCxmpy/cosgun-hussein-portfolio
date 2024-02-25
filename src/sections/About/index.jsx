@@ -19,7 +19,11 @@ export default function About() {
     "Figma",
     "Ruby",
     "MongoDB",
-    "Unity"
+    "Unity",
+    "SQLite",
+    "Electron",
+    "Tauri",
+    "WordPress"
   ];
 
   const aboutSectRef = useRef();
