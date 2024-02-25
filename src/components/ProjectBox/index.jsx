@@ -17,7 +17,7 @@ export default function ProjectBox({ link, title, description, gitHub }) {
             <BiFolder />
             <div className={styles['links']}>
               {gitHub ? <Link to={gitHub}><BiLogoGithub /></Link> : null}
-              <Link to={link}><BiLinkExternal /></Link>
+              <Link to={link} aria-label="External Link" target="_blank"><BiLinkExternal /></Link>
             </div>
           </div>
           <h3 className={styles['project-title']}>{title}</h3>

@@ -15,7 +15,7 @@ export default function ProjectCard({ title, desc, image, link, github }) {
       <div className={styles['project-content']}>
         <div>
           <p className={styles['project-overline']}>Featured Project</p>
-          <h3 className={styles['project-title']}><Link to={link}>{title}</Link></h3>
+          <h3 className={styles['project-title']}><Link to={link} aria-label="External Link" target="_blank">{title}</Link></h3>
           <div className={styles['project-description']}>
             <p>{desc}</p>
           </div>
