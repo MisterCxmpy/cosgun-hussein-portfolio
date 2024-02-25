@@ -24,9 +24,8 @@
   overflow: auto;
 
   &:hover {
-    > .project-content > .project-title {
-      color: var(--light-purple);
-    }
+    background: #312b81;
+    transition: var(--transition-alt);
   }
 }
 

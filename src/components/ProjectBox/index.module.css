@@ -21,8 +21,9 @@
   background-color: var(--accent);
   overflow: auto;
 }
-.project-inner:hover > .project-content > .project-title {
-  color: var(--light-purple);
+.project-inner:hover {
+  background: #312b81;
+  transition: var(--transition-alt);
 }
 
 .project-top {

@@ -37,6 +37,7 @@ body[data-theme="dark"] {
   -webkit-text-size-adjust: 100%;
 
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --transition-alt: all 0.15s cubic-bezier(0.645,0.045,0.355,1);
   --white: #dbdaf1;
   --light-grey: #c9c6f5;
   --light-purple: #2f1b47; 

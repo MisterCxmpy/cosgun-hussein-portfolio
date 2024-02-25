@@ -55,4 +55,21 @@
   outline: none;
   box-shadow: 4px 4px 0 0 var(--accent);
   transform: translate(-5px, -5px);
+  cursor: pointer;
+}
+.email:hover > .shake-horizontal {
+  animation: shake-horizontal 0.5s ease-in-out;
+  display: inline-block; /* Ensures the animation works on inline elements like span */
+}
+
+@keyframes shake-horizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-2.5px);
+  }
+  50% {
+    transform: translateX(2.5px);
+  }
 }/*# sourceMappingURL=index.module.css.map */
