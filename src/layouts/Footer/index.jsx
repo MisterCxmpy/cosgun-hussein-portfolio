@@ -25,7 +25,7 @@ export default function Footer() {
         <ul>
           {socials.map((s, i) => (
             <li key={i}>
-              <Link to={s.link}>{s.icon}</Link>
+              <Link to={s.link} target="_blank">{s.icon}</Link>
             </li>
           ))}
         </ul>
