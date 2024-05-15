@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './index.module.css'
 import { Header, ProjectBox, ProjectCard } from '../../components'
-import { SerenityAI, SmartenUp, WithinAgency } from '../../assets'
+import { SignatureStaycation, SmartenUp, WithinAgency } from '../../assets'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import { Link } from 'react-router-dom';
 
@@ -30,11 +30,10 @@ export default function Projects() {
           link="https://smartnup.co.uk"
         />
         <ProjectCard
-          title="Serenity AI"
-          desc="Serenity AI is a mental health app designed to offer support and guidance for improved well-being. Whether you seek accountability or a trusted companion, we're here to assist you on your journey to better mental health."
-          image={SerenityAI}
-          link="https://serenity-ai.netlify.app/authenticate/login"
-          github="https://github.com/MisterCxmpy/mental-health-client"
+          title="Signature Staycation"
+          desc="Providing tailored property management and relocation services in London and the Midlands, Signature Staycation helps B2B landlords enhance their real estate investments with ethical, long-term solutions."
+          image={SignatureStaycation}
+          link="https://signature-staycation.com"
         />
       </ul>
       <header ref={headerRef} className={`${styles["header"]} ${styles["hidden"]}`}>
@@ -44,7 +43,7 @@ export default function Projects() {
       </header>
       <ul className={`${styles['noteworthy-projects']}`}>
         <ProjectBox link={"https://notion.london"} title={"Notion London"} description={"Notion London is a simple gateway to Notion and Studio Notion. This placeholder website connects you to the main Notion and Studio Notion websites."} gitHub={""} />
-        <ProjectBox link={"https://prestine.vercel.app"} title={"Prestine POS"} description={"Prestine POS: Simplifying dry cleaning business management. In development, soon to be your go-to SaaS solution."} gitHub={"https://github.com/MisterCxmpy/prestine-pos"} />
+        <ProjectBox link={"https://serenity-ai.netlify.app/authenticate/login"} title={"Serenity AI"} description={"Serenity AI is a mental health app designed to offer support and guidance for improved well-being. Whether you seek accountability or a trusted companion, we're here to assist you on your journey to better mental health."} gitHub={"https://github.com/MisterCxmpy/mental-health-client"} />
         <ProjectBox link={"https://ashs-pawsome-gallery.netlify.app"} title={"Ash's Pawsome Gallery"} description={"Ash's Pawsome Gallery is exclusively dedicated to my dog, storing all his pictures on Google Drive via the Google Drive API for easy access and effortless addition of new images."} gitHub={"https://github.com/MisterCxmpy/ashs-pawsome-gallery-client"} />
         <ProjectBox link={"https://lap3-learnify.netlify.app"} title={"Learnify"} description={"Learnify is an all-in-one platform for GCSE and A-level learning, offering nine subjects, interactive quizzes, custom flashcards, and a user-friendly Dashboard for personalized content."} gitHub={"https://github.com/MisterCxmpy/Learnify"} />
         <ProjectBox link={"https://nuka-diner.netlify.app"} title={"Nuka Diner"} description={`Heavily inspired by <a href="https://lynnandtonic.com">Lynn Fisher</a> 'The Food Place', Nuka Diner is a Fallout-inspired food menu showcasing delicious foods from all around the Commonwealth.`} gitHub={"https://github.com/MisterCxmpy/nuka-diner"} />
