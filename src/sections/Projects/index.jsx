@@ -1,14 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import styles from "./index.module.css";
 import { Header, ProjectBox, ProjectCard } from "../../components";
 import {
-  SignatureStaycation,
-  SmartenUp,
+  TheCovalentBond,
   StudioNotion,
   WithinAgency,
 } from "../../assets";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import { Link } from "react-router-dom";
 
 export default function Projects() {
   const projectRef = useRef();
@@ -31,6 +29,12 @@ export default function Projects() {
       />
       <ul className={styles["featured-projects"]}>
         <ProjectCard
+          title="The Covalent Bond"
+          desc="thecovalentbond is a London-based digital marketing agency with 20+ years of experience, specializing in performance marketing, SEO, PPC, and web design. They help businesses grow through tailored strategies and data-driven insights."
+          image={TheCovalentBond}
+          link="https://thecovalentbond.com/"
+        />
+        <ProjectCard
           title="Studio Notion"
           desc="Studio Notion, the sibling agency of Notion magazine, is a leading strategic and creative production agency specializing in event and content production, and talent procurement. They engage forward-thinking brands with the next generation through innovative, customized strategies and immersive experiences."
           image={StudioNotion}
@@ -42,12 +46,6 @@ export default function Projects() {
           image={WithinAgency}
           link="https://withinagency.com"
         />
-        <ProjectCard
-          title="Smarten Up"
-          desc="Redesigned and built Smarten Up Dry Cleaners' website using React, enhancing their online presence with a seamless blend of aesthetics and functionality. Meticulously crafted to reflect their commitment to excellence."
-          image={SmartenUp}
-          link="https://smartnup.co.uk"
-        />
       </ul>
       <header
         ref={headerRef}
@@ -58,6 +56,22 @@ export default function Projects() {
         </h2>
       </header>
       <ul className={`${styles["noteworthy-projects"]}`}>
+        <ProjectBox
+          link={"https://smartnup.co.uk"}
+          title={"Smarten Up"}
+          description={
+            "Redesigned and built Smarten Up Dry Cleaners' website using React, enhancing their online presence with a seamless blend of aesthetics and functionality. Meticulously crafted to reflect their commitment to excellence."
+          }
+          gitHub={""}
+        />
+        <ProjectBox
+          link={"https://www.primestaysproperties.co.uk/"}
+          title={"Prime Stay Properties"}
+          description={
+            "Prime Stays Properties offers uniquely designed serviced apartments in London, specializing in mid to long stays. With a partnership with Final Touch Furniture, they provide seamless solutions for guests and landlords."
+          }
+          gitHub={""}
+        />
         <ProjectBox
           link={"https://signature-staycation.com"}
           title={"Signature Staycation"}
