@@ -52,7 +52,7 @@ export default function Contact() {
     };
   }, [timeoutId]);
 
-  useIntersectionObserver(contactRef, styles, -60);
+  useIntersectionObserver(contactRef, styles, -50);
 
   return (
     <section ref={contactRef} id='contact' className={`${styles['contact-section']} ${styles['hidden']}`}>
