@@ -4,7 +4,7 @@ import { Header, ProjectBox, ProjectCard } from "../../components";
 import {
   TheCovalentBond,
   StudioNotion,
-  WithinAgency,
+  ScheduleIBlueprintEditor,
 } from "../../assets";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
@@ -29,6 +29,12 @@ export default function Projects() {
       />
       <ul className={styles["featured-projects"]}>
         <ProjectCard
+          title="Schedule I Blueprint Editor"
+          desc="Schedule I Blueprint Editor is a base planning platform for the Schedule I video game, attracting 8,000 active users within just 9 days of launch. This tool streamlines the blueprint creation process for all property types."
+          image={ScheduleIBlueprintEditor}
+          link="https://scheduleoneeditor.com/"
+        />
+        <ProjectCard
           title="The Covalent Bond"
           desc="thecovalentbond is a London-based digital marketing agency with 20+ years of experience, specializing in performance marketing, SEO, PPC, and web design. They help businesses grow through tailored strategies and data-driven insights."
           image={TheCovalentBond}
@@ -40,12 +46,6 @@ export default function Projects() {
           image={StudioNotion}
           link="https://www.studionotion.com"
         />
-        <ProjectCard
-          title="Within Agency"
-          desc="Redesigned and developed Within Agency's website with React, enhancing their online presence and user experience. Our collaborative effort resulted in a remarkable web solution."
-          image={WithinAgency}
-          link="https://withinagency.com"
-        />
       </ul>
       <header
         ref={headerRef}
@@ -56,6 +56,14 @@ export default function Projects() {
         </h2>
       </header>
       <ul className={`${styles["noteworthy-projects"]}`}>
+        <ProjectBox
+          link={"https://withinagency.com"}
+          title={"Within Agency"}
+          description={
+            "Redesigned and developed Within Agency's website with React, enhancing their online presence and user experience. Our collaborative effort resulted in a remarkable web solution."
+          }
+          gitHub={""}
+        />
         <ProjectBox
           link={"https://smartnup.co.uk"}
           title={"Smarten Up"}
